@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - Travel Kashmir</title>
+    <style>
+        body, header, nav, main, footer { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        header { background-color: #4CAF50; color: white; text-align: center; padding: 18px; }
+        nav { background-color: #333; text-align: center; padding: 10px 0; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; padding: 5px 10px; }
+        nav a:hover { background-color: #575757; }
+        main { padding: 20px; text-align: center; }
+        table { width: 100%; margin: 20px auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        footer { background-color: #4CAF50; color: white; text-align: center; padding: 8px; }
+
+        /* Keep image at 50% width */
+        .image-container { position: relative; display: block; margin: 0 auto; width: 50%; }
+        .image-container img { width: 100%; height: auto; }
+
+        /* Positioning labels */
+        .label { position: absolute; color: white; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+        .label-gulmarg { top: 10%; left: 5%; }
+        .label-pahalgam { top: 10%; left: 35%; }
+        .label-sonmarg { top: 10%; left: 65%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top Travel Destinations</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Explore Our Destinations</h2>
+        <table>
+            <tr>
+                <th>Destination</th>
+                <th>Duration</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Gulmarg</td>
+                <td>1 Night and 2 Days</td>
+                <td>₹12000</td>
+            </tr>
+            <tr>
+                <td>Pahalgam</td>
+                <td>2 Days 3 Nights</td>
+                <td>₹15900</td>
+            </tr>
+            <tr>
+                <td>Sonmarg</td>
+                <td>2 Nights 2 Days</td>
+                <td>₹8000</td>
+            </tr>
+        </table>
+        
+        <div class="image-container">
+            <img src="Picture1.png" usemap="#image-map" alt="Interactive Image" />
+            <div class="label label-gulmarg">Gulmarg</div>
+            <div class="label label-pahalgam">Pahalgam</div>
+            <div class="label label-sonmarg">Sonmarg</div>
+        </div>
+
+        <map name="image-map">
+            <!-- Updated coordinates for the new image size -->
+            <area shape="rect" coords="0,0,298,256" href="gulmarg.html" alt="Gulmarg" />
+            <area shape="rect" coords="298,0,596,256" href="pahalgam.html" alt="Pahalgam" />
+            <area shape="rect" coords="596,0,894,256" href="sonmarg.html" alt="Sonmarg" />
+        </map>
+    </main>
+    <footer>
+        &copy; 2024 . Adeel Ariq Sheikh.
+    </footer>
+</body>
+</html>
